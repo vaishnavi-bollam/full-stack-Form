@@ -2,30 +2,41 @@
 <html>
 <head>
     <title>Simple Form</title>
-    <style>           
-    </style>
     <link rel="stylesheet" type="text/css" href="form.css">
 
 </head>
 <body>
     <div class="msg-color">
         <h1 id="successMsg"></h1>
-      </div>
-  
-    <div class="form-container">
-        <h2>Registration Form</h2>
+    </div>
+
+    <div id="registerform" class="form-container">
+        <h1>Create your Todo-List</h1>
+        <h4>New User? Register down &#128071</h4>
         <form id="myForm">
-            <label>Name:</label>
-            <input id="name" >
+            <label for="name">Name:</label>
+            <input id="name" class="input-field" type="text">
 
-            <label>Email:</label>
-            <input id="email">
+            <label for="email">Email:</label>
+            <input id="email" class="input-field" type="email">
 
-            <label>Password:</label>
-            <input id="password">
-
+            <label for="password">Password:</label>
+            <input id="password" class="input-field" type="password">
         </form>
-        <button id="register">Register</button>
+        <button id="register" class="submit-button">Register</button>
+        <button id="login" class="submit-button">Login</button>
+    </div>
+
+    <div id="loginform" class="form-container login-form">
+        <h1>Login</h1>
+        <form >
+            <label for="email">Email:</label>
+            <input id="loginemail" class="input-field" type="email">
+
+            <label for="password">Password:</label>
+            <input id="loginpassword" class="input-field" type="password">
+        </form>
+        <button id="btnlogin" class="submit-button">Login</button>
     </div>
 
     <script src="form.js"></script>
